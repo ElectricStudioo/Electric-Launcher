@@ -5,7 +5,7 @@
     height: 70px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    background: #00000080;
+    background: rgba(54, 42, 42, 0);
     display: flex;
 }
 
@@ -21,6 +21,7 @@
     border: none;
     border-radius: 15px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    margin-left: 450px;
 }
 
 .player-head:hover {
@@ -37,6 +38,7 @@
     border: none;
     border-radius: 15px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    margin-right: 420px;
 }
 
 .settings-btn:hover {
@@ -56,19 +58,28 @@
     color: #F1F1F1;
     font: normal normal bold 19px/29px Poppins;
     text-align: center;
+    margin-top: 15;
 }
 
 .play-btn {
     top: 10px;
-    width: 160px;
-    height: 37px;
-    border-radius: 20px;
+    width: 260px;
+    height: 47px;
+    border-radius: 15px;
     border: none;
-    background: #00bd7a;
+    background: rgb(125, 125, 125, 0.5);
     font: normal normal bold 20px/25px Poppins;
-    color: #121212;
+    color: #cbcbcb;
     margin: 15px 0;
-    box-shadow: 0 0 5px #00bd7a;
+    box-shadow: 0 0 5px rgb(125, 125, 125, 0.25);
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    margin-top: -3;
+}
+
+.play-btn:hover {
+    border-radius: 5px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    background: rgb(125, 125, 125);
 }
 
 .download-content {
@@ -105,7 +116,10 @@
 .body-home {
     display: flex;
     height: 78vh;
-    margin: 3rem 2rem;
+    margin: 4rem 2rem;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
 }
 
 .news-list {
@@ -120,12 +134,6 @@
 
 .news-block {
     margin-bottom: 1rem;
-    transition: opacity 1s;
-    opacity: .4;
-}
-
-.news-block:hover {
-    transition: opacity 1s;
     opacity: 1;
 }
 
@@ -217,9 +225,88 @@
 
 .info-list {
     position: relative;
-    width: 65vh;
+    width: 1000px;
     padding-left: 1rem;
     background: none;
+    margin-top: -10;
+    display: none;
+}
+
+.info-item {
+    margin-top: -10;
+}
+
+.instances-btn {
+    margin: auto 30px;
+    background: rgb(0, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    font-size: 20px;
+    margin-left: 930px;
+    margin-top: 10px;
+}
+
+.instances-btn:hover {
+    border-radius: 5px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    background: rgb(0, 255, 255, 1);
+}
+
+.instances {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 255, 255, 0.5);
+    max-width: 800px;
+    width: 100%;
+}
+
+.instances-header {
+    background-color: #0089ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: normal normal bold 19px/29px Poppins;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #ff0000; /* Cambiado a color rojo */
+    margin-top: -65;
+}
+
+.close-btn:hover {
+    color: #bf0000
+}
+
+.instances-list {
+    padding: 10px;
+}
+
+.instances-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font: normal normal bold 19px/29px Poppins;
+}
+
+.instances-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.instances-list li:hover {
+    background-color: rgb(0, 255, 255, 1);
 }
 
 .server {
@@ -229,18 +316,13 @@
     background-color: #292929;
     border-radius: 10px;
     transition: opacity 1s;
-    opacity: .4;
-}
-
-.server:hover {
-    transition: opacity 1s;
     opacity: 1;
 }
 
 .server-img {
     position: absolute;
-    width: 42px;
-    height: 45px;
+    width: 62px;
+    height: 62px;
     top: 15px;
     left: 15px;
 }
@@ -252,6 +334,7 @@
     top: 17px;
     left: 70px;
     transition: color .2s;
+    margin-left: 400px;
 }
 
 .desc {
@@ -262,6 +345,7 @@
     top: 40px;
     left: 70px;
     transition: color .2s;
+    margin-left: 385px;
 }
 
 .green {

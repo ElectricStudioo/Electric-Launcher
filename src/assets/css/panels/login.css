@@ -22,27 +22,27 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    background-color: #0000ff;
+    box-shadow: 0 0 5px #0000ff;
     color: #121212;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
 }
 
 .login-type-btn:hover {
-    background-color: #006e47;
-    box-shadow: 0 0 5px #006e47;
+    background-color: #0000bf;
+    box-shadow: 0 0 5px #0000bf;
 }
 
 .login-type-btn:disabled {
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    background-color: #000088;
+    box-shadow: 0 0 5px #000088;
     cursor: default;
 }
 
 .login-type-btn:disabled:hover {
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    background-color: #000085;
+    box-shadow: 0 0 5px #000085;
 }
 
 .login-card-mojang {
@@ -78,6 +78,10 @@
     padding: 0.375rem 0.75rem;
 }
 
+.Password {
+    display: none;
+}
+
 .loginDisclaimerText {
     text-align: center;
     font-size: 0.5em;
@@ -94,16 +98,16 @@
     border: none;
     margin: 2% 0;
     height: 2em;
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    background-color: #0000ff;
+    box-shadow: 0 0 5px #0000ff;
     color: #121212;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
 }
 
 .login-btn:hover {
-    background-color: #006e47;
-    box-shadow: 0 0 5px #006e47;
+    background-color: #0000bf;
+    box-shadow: 0 0 5px #0000bf;
 }
 
 .cancel {
